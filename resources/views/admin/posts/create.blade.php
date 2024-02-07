@@ -27,14 +27,14 @@
     @csrf
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Titolo Portfolio</label>
-    <input type="text" class="form-control" name="title" required  >
+    <input type="text" class="form-control" name="title" value="{{old('title')}}" required  >
      
 
    </div>
 
   <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label">Contenuto</label>
-    <textarea type="text"  class="form-control" name="content" ></textarea> </textarea>
+    <textarea type="text"  class="form-control" name="content"value="{{old('content')}}" ></textarea> </textarea>
   </div>
 
 
