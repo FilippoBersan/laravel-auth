@@ -1,6 +1,15 @@
 @extends('layouts.admin')
 
 @section('content')
+
+
+
+
+
+
+
+
+
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-8 mt-4">
@@ -14,7 +23,7 @@
                             </div>
                         @endif
 
-                        {{ __('You are logged in!') }}
+                        {{ __('Sei loggato!') }}
                     </div>
                 </div>
             </div>
