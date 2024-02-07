@@ -22,7 +22,7 @@ class PostSeeder extends Seeder
         $post = new Post();
         $post->title = $faker->sentence(3);
         $post->content = $faker->text(100);
-         $post->slug = Str::of($post->title)->slug('-');
+        $post->slug = Str::of($post->title)->slug('-');
         $post->save();
         }
     }

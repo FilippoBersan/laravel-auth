@@ -41,11 +41,11 @@ class PostController extends Controller
     {
         //
 
-        $data = $request->all();
+        // $data = $request->all();
 
-        $post = new Post();
+        // $post = new Post();
 
-        $post->save();
+        // $post->save();
 
     }
 
@@ -55,6 +55,14 @@ class PostController extends Controller
     public function show(Post $post)
     {
         //
+        // return 'sono il dettaglio';
+
+        // $post = Post::where('slug', $slug)->first();
+
+        // dd($post); 
+
+        return view('admin.posts.show' , compact('post'));
+  
     }
 
     /**
